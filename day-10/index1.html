@@ -1,0 +1,23 @@
+<style>
+    div{
+        background-color: aquamarine;
+        height: 100px;
+        width: 100px;
+        transition: 2s;
+    }
+    .widthmax{
+            width: 1500px;
+    }
+</style>
+<div id ="box"></div>
+<br>
+<button onclick="change()">Change color</button>
+<script>
+    //select box
+    var box=document.getElementById("box")
+    function change()
+    {
+            box.setAttribute("class","widthmax")
+            box.style.backgroundColor="red"
+    }
+</script>
